@@ -829,9 +829,9 @@ def main():
     setup_console()
     setup_http_session()
 
-    if not args.no_version_check:
-        with ignored(Exception):
-            check_version()
+    # if not args.no_version_check:
+    #     with ignored(Exception):
+    #         check_version()
 
     if args.plugins:
         print_plugins()
